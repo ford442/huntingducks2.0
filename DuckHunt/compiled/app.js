@@ -5419,10 +5419,10 @@ var ASM_CONSTS = {
       EGL.setErrorCode(0x3000 /* EGL_SUCCESS */);
       switch (attribute) {
       case 0x3020: // EGL_BUFFER_SIZE
-        HEAP32[((value)>>2)] = EGL.contextAttributes.alpha ? 32 : 24;
+        HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x3021: // EGL_ALPHA_SIZE
-        HEAP32[((value)>>2)] = EGL.contextAttributes.alpha ? 8 : 0;
+        HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x3022: // EGL_BLUE_SIZE
         HEAP32[((value)>>2)] = 8;
@@ -5434,10 +5434,10 @@ var ASM_CONSTS = {
         HEAP32[((value)>>2)] = 8;
         return 1;
       case 0x3025: // EGL_DEPTH_SIZE
-        HEAP32[((value)>>2)] = EGL.contextAttributes.depth ? 24 : 0;
+        HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x3026: // EGL_STENCIL_SIZE
-        HEAP32[((value)>>2)] = EGL.contextAttributes.stencil ? 8 : 0;
+        HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x3027: // EGL_CONFIG_CAVEAT
         // We can return here one of EGL_NONE (0x3038), EGL_SLOW_CONFIG (0x3050) or EGL_NON_CONFORMANT_CONFIG (0x3051).
@@ -5498,7 +5498,7 @@ var ASM_CONSTS = {
         return 1;
       case 0x303D: // EGL_LUMINANCE_SIZE
       case 0x303E: // EGL_ALPHA_MASK_SIZE
-        HEAP32[((value)>>2)] = 0;
+        HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x303F: // EGL_COLOR_BUFFER_TYPE
         // EGL has two types of buffers: EGL_RGB_BUFFER and EGL_LUMINANCE_BUFFER.
