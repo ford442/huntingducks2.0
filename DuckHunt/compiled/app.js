@@ -5425,13 +5425,13 @@ var ASM_CONSTS = {
         HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x3022: // EGL_BLUE_SIZE
-        HEAP32[((value)>>2)] = 8;
+        HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x3023: // EGL_GREEN_SIZE
-        HEAP32[((value)>>2)] = 8;
+        HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x3024: // EGL_RED_SIZE
-        HEAP32[((value)>>2)] = 8;
+        HEAP32[((value)>>2)] = 32;
         return 1;
       case 0x3025: // EGL_DEPTH_SIZE
         HEAP32[((value)>>2)] = 32;
